@@ -18,5 +18,9 @@ public class Farmer {
     public void takeProfit() {
 
     }
+
+    public void giveFood() {
+
+    }
 }
 

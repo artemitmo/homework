@@ -38,13 +38,6 @@ public class Farm {
         System.out.println("Взята ежедневная плата 2 единицы, остаток ресурсов фермера - " + account +" ед.");
         int r = (int)(Math.random()*3);
         callArrWild()[r].hunt(callArrPet()[(int)(Math.random()*8)]);
-        System.out.println(callArrPet()[0]);
-        System.out.println(callArrPet()[1]);
-        System.out.println(callArrPet()[2]);
-        System.out.println(callArrPet()[3]);
-        System.out.println(callArrPet()[4]);
-        System.out.println(callArrPet()[5]);
-        System.out.println(callArrPet()[6]);
-        System.out.println(callArrPet()[7]);
+
     }
 }
