@@ -1,6 +1,9 @@
 package FarmGame.Classes;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 
 public class Farm {
 
@@ -31,13 +34,18 @@ public class Farm {
         return farmer;
     }
 
+    public ArrayList getList(){
+        List listDomAn = new ArrayList<>(Arrays.asList(callArrPet()));
+        return (ArrayList) listDomAn;
+    }
 
     public void passDay(){
+        List listWilAn = new ArrayList<>(Arrays.asList(callArrWild()));
         int account = callFarmer()[0].getResourceFarm() - 2; //ежедневная плата
         callFarmer()[0].setResourceFarm(account);
         System.out.println("Взята ежедневная плата 2 единицы, остаток ресурсов фермера - " + account +" ед.");
         int r = (int)(Math.random()*3);
-        callArrWild()[r].hunt(callArrPet()[(int)(Math.random()*8)]);
-
+        int r2 = (int)(Math.random()*8);
+        callArrWild()[r].hunt(callArrPet()[r2]);
     }
 }
