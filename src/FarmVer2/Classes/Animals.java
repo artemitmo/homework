@@ -1,4 +1,4 @@
-package FarmGame.Classes;
+package FarmVer2.Classes;
 
 abstract public class Animals {
     private String name;
@@ -43,4 +43,6 @@ abstract public class Animals {
                 ", speed=" + speed +
                 '}';
     }
+
+    public Animals() {};
 }
