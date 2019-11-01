@@ -3,18 +3,20 @@ package FarmVer2.Classes;
 import java.util.ArrayList;
 
 public class Farmer {
-    final int resourceFarm = 5;
+    int resourceFarm = 5;
 
     public int getResourceFarm() {
         return resourceFarm;
     }
 
-    public void takeProfit() {
+    public void setResourceFarm(int resourceFarm) {
+        this.resourceFarm = resourceFarm;
+    }
 
+    public void takeProfit() {
     }
 
     public void giveFood() {
-
     }
 
     ArrayList<Farmer> arrLFarmer = new ArrayList<>();
@@ -23,5 +25,4 @@ public class Farmer {
         arrLFarmer.add(farmer1);
         return arrLFarmer;
     }
-
 }

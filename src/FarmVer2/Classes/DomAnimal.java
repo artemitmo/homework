@@ -44,14 +44,14 @@ public class DomAnimal extends Animals {
 
     //метод, создающий ArrayList заполненный
     public ArrayList<DomAnimal> getDomAnArr (){
-        DomAnimal cow1 = new DomAnimal ("Cow1", 50, 40, 50, 10);
-        DomAnimal cow2  = new DomAnimal("Cow2", 100, 5, 70, 19);
-        DomAnimal cow3 = new DomAnimal("Cow3", 110, 5, 60, 10);
-        DomAnimal cat1 = new DomAnimal("Cat1", 15, 30, 20);
-        DomAnimal rabbit = new DomAnimal("Rabbit",5 , 27, 20);
-        DomAnimal rabbit1 = new DomAnimal("Rabbit1", 2, 25, 20);
-        DomAnimal chicken = new DomAnimal("Chicken", 5, 10, 30, 3);
-        DomAnimal chicken2 = new DomAnimal("Chicken2", 5, 14, 30, 3);
+        DomAnimal cow1 = new DomAnimal ("Cow1", 50, 40, 50, 3);
+        DomAnimal cow2  = new DomAnimal("Cow2", 100, 5, 70, 4);
+        DomAnimal cow3 = new DomAnimal("Cow3", 110, 5, 60, 5);
+        DomAnimal cat1 = new DomAnimal("Cat1", 15, 30, 20, 0);
+        DomAnimal rabbit = new DomAnimal("Rabbit",5 , 27, 20, 0);
+        DomAnimal rabbit1 = new DomAnimal("Rabbit1", 2, 25, 20, 0);
+        DomAnimal chicken = new DomAnimal("Chicken", 5, 10, 30, 2);
+        DomAnimal chicken2 = new DomAnimal("Chicken2", 5, 14, 30, 2);
         domAnimalArrayList.addAll(Arrays.asList(cow1, cow2, cow3, cat1, rabbit, rabbit1, chicken, chicken2));
         return domAnimalArrayList;
     }
