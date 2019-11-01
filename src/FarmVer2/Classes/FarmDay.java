@@ -2,15 +2,18 @@ package FarmVer2.Classes;
 import java.util.ArrayList;
 
 public class FarmDay {
+    Farmer f = new Farmer();
+    DomAnimal d1 = new DomAnimal();
+    WildAnimal w1 = new WildAnimal();
+    ArrayList<DomAnimal> farmDomArr = d1.getDomAnArr();
+    ArrayList<WildAnimal> farmWildArr = w1.getWildArrL();
+    int countDays = 0;
+
+
     public void oneDay() {
-        Farmer f = new Farmer();
         int account = f.getFarmer().get(0).getResourceFarm();
         account -= 2;
         System.out.println("Взята ежедневная плата, остаток на счете фермера " + account);
-        DomAnimal d1 = new DomAnimal();
-        WildAnimal w1 = new WildAnimal();
-        ArrayList<DomAnimal> farmDomArr = d1.getDomAnArr();
-        ArrayList<WildAnimal> farmWildArr = w1.getWildArrL();
         int indexDomAnimal = (int) (Math.random() * farmDomArr.size());
         int b = (int) (Math.random() * farmWildArr.size());
         int c = (int) (Math.random() * farmWildArr.size());
@@ -46,6 +49,12 @@ public class FarmDay {
                 System.out.println("Game over");
             }
         }
+
         System.out.println();
+        while (farmWildArr.size()>0){
+            countDays++;
+            System.out.println("Прошел день " + countDays);
+             oneDay();
+        }
     }
 }

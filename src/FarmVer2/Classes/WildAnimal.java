@@ -47,7 +47,7 @@ public class WildAnimal extends Animals implements Attack {
         System.out.println("Дикое животное подошло к ферме");
         WildAnimal w = new WildAnimal();
         int a = prey.getHealth();
-        int indexW = (int)(Math.random()*10/w.getWildArrL().size());
+        int indexW = (int)(Math.random()*w.getWildArrL().size());
         int d = w.getWildArrL().get(indexW).getDamage();
         int s = w.getWildArrL().get(indexW).getSpeed();
 

@@ -5,5 +5,6 @@ public class Main {
     public static void main(String[] args) {
         FarmDay fd1 = new FarmDay();
         fd1.oneDay();
+        System.out.println("Победил фермер!!!");
     }
 }
