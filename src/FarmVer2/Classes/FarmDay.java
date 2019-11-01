@@ -1,5 +1,7 @@
 package FarmVer2.Classes;
 
+import java.util.ArrayList;
+
 public class FarmDay {
     public void oneDay(){
         Farmer f = new Farmer();
@@ -8,7 +10,11 @@ public class FarmDay {
         System.out.println("Взята ежедневная плата, остаток на счете фермера " + account);
         DomAnimal d1 = new DomAnimal();
         WildAnimal w1 = new WildAnimal();
-        int indexDomAnimal = (int)(Math.random()*d1.getDomAnArr().size());
-        w1.attack(d1.getDomAnArr().get(indexDomAnimal));
+        ArrayList <DomAnimal> farmDomArr = d1.getDomAnArr();
+        int indexDomAnimal = (int)(Math.random()*farmDomArr.size());
+        w1.attack(farmDomArr.get(indexDomAnimal));
+        if (farmDomArr.get(indexDomAnimal)==null) {
+            farmDomArr.remove(indexDomAnimal);
+        }
     }
 }

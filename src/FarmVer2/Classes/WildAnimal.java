@@ -57,7 +57,7 @@ public class WildAnimal extends Animals implements Attack {
         }
         else {
             System.out.println("Животное убито");
-            prey = null;
+            prey=null;
         }
         return prey;
     }
