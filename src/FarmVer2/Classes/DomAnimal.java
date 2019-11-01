@@ -7,6 +7,22 @@ public class DomAnimal extends Animals {
     private int health;
     private int oneDayPut;
 
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getOneDayPut() {
+        return oneDayPut;
+    }
+
+    public void setOneDayPut(int oneDayPut) {
+        this.oneDayPut = oneDayPut;
+    }
+
     //создаем конструктор со всеми параметрами
     public DomAnimal(String name, int weight, int speed, int health, int oneDayPut) {
         super(name, weight, speed);
@@ -21,7 +37,7 @@ public class DomAnimal extends Animals {
 
     public DomAnimal(){
         super();
-    };
+    }
 
     //создаем ArrayList для домашних животных
     ArrayList <DomAnimal> domAnimalArrayList = new ArrayList<>();
