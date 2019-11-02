@@ -1,4 +1,6 @@
 package FarmVer2.Classes;
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 
 public class FarmDay {
@@ -23,12 +25,14 @@ public class FarmDay {
             farmWildArr.get(b).setCountOfBanish(d);
             if (farmWildArr.get(b).getCountOfBanish() == 3) { //3 раза прогнали
                 farmWildArr.remove(b); //удаление зверя из листа
+                System.out.println("Зверь прогоняется 3й раз и больше не показывается на ферме");
             }
         } else {
             w1.attack(farmDomArr.get(indexDomAnimal));
         }
         if (farmDomArr.get(indexDomAnimal) == null) {
             farmDomArr.remove(indexDomAnimal); // удаление домашнего животного из листа
+            System.out.println("Домашнее животное убито");
         }
         System.out.println("Кормление животных, +1 к health всем оставшимся");
         for (int i = 0; i < farmDomArr.size(); i++) {
