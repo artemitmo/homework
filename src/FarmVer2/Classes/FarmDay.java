@@ -51,7 +51,7 @@ public class FarmDay {
         }
 
         System.out.println();
-        while (farmWildArr.size()>0){
+        while (farmWildArr.size()>0 && farmDomArr.size()>0 && f.resourceFarm>0 ){
             countDays++;
             System.out.println("Прошел день " + countDays);
              oneDay();
