@@ -31,9 +31,9 @@ public class WildAnimal extends Animals implements Attack {
     ArrayList <WildAnimal> wildArrL = new ArrayList();
 
     public ArrayList<WildAnimal> getWildArrL() {
-        WildAnimal wolf = new WildAnimal("Wolf", 100, 10, 30, 0);
+        WildAnimal wolf = new WildAnimal("Wolf", 100, 30, 30, 0);
         WildAnimal fox = new WildAnimal("Fox", 70, 25, 20, 0);
-        WildAnimal bear = new WildAnimal("Bear", 70, 10, 20, 0);
+        WildAnimal bear = new WildAnimal("Bear", 70, 30, 20, 0);
         wildArrL.addAll(Arrays.asList(wolf, fox, bear));
         return wildArrL;
     }

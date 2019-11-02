@@ -13,7 +13,7 @@ public class FarmDay {
     public void oneDay() {
         int account = f.getFarmer().get(0).getResourceFarm();
         account -= 2;
-        System.out.println("Взята ежедневная плата, остаток на счете фермера " + account);
+        System.out.println("Взята ежедневная плата, остаток на счете фермера " + f.getResourceFarm());
         int indexDomAnimal = (int) (Math.random() * farmDomArr.size());
         int b = (int) (Math.random() * farmWildArr.size());
         int c = (int) (Math.random() * farmWildArr.size());
@@ -54,7 +54,7 @@ public class FarmDay {
         while (farmWildArr.size()>0 && farmDomArr.size()>0 && f.resourceFarm>0 ){
             countDays++;
             System.out.println("Прошел день " + countDays);
-             oneDay();
+             oneDay(); //recursion
         }
     }
 }
