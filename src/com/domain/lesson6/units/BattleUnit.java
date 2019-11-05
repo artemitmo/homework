@@ -21,6 +21,24 @@ abstract public class BattleUnit extends Unit implements AttackAble{
     public void escapeBattleField() {
         System.out.println("BattleUnit покидает бой");
     }
+
+    public static BattleUnit returnUnit (String yourChoice){
+        if (yourChoice.equals("Warrior")){
+            Warrior war1 = new Warrior("Warrior" + (int)Math.random()*10, (int)Math.random()*10, (int)Math.random()*100, (int)Math.random()*5);
+            return war1;
+        }
+        else if (yourChoice.equals("Doctor")){
+            Doctor doc1 = new Doctor("Doc" + (int)Math.random()*10, (int)Math.random()*5, (int)Math.random()*100, (int)Math.random()*40);
+            return doc1;
+        }
+        else if (yourChoice.equals("Knight")){
+            Knight knight1 = new Knight("Knight"+ (int)Math.random()*10, (int)Math.random()*5,(int)Math.random()*100, (int)Math.random()*40);
+            return knight1;
+            }
+        }
+
+
+    }
     //Base-class Unit. BattleUnit extends Unit
     //Наследование, инкапсуляция, полиморфизм, абстракция
     //Населедование extends, расширение функционала родительского класса без его изменения

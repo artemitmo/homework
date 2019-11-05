@@ -7,7 +7,10 @@ abstract public class Unit implements RestAble {
 
     public Unit(String name, int speed) {
         this.name = name;
-        this.speed = speed;
+        if(speed > 0){
+        this.speed = speed;}
+        else {
+        }
     }
 
     public String getName() {

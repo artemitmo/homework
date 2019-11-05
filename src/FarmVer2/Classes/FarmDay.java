@@ -59,6 +59,14 @@ public class FarmDay {
             countDays++;
             System.out.println("Прошел день " + countDays);
              oneDay(); //recursion
+            break;
+        }
+        if (farmWildArr.size()==0){
+            System.out.println("Фермер прогнал всех диких зверей!");
+
+        }
+        else if (f.resourceFarm <=0){
+            System.out.println("Фермер разорен");
         }
     }
 }
