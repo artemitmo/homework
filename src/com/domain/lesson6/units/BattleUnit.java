@@ -9,13 +9,28 @@ abstract public class BattleUnit extends Unit implements AttackAble{
     }
 
     public void setAttackScore(int attackScore) {
-        this.attackScore = attackScore;
+        if(attackScore>0){
+        this.attackScore = attackScore;}
+        else {
+            this.attackScore = 1;
+        }
     }
 
     public BattleUnit(String name, int speed, int health, int attackScore) {
-        super(name, speed);//предлагает создать конструктор при наследовании. Вызывается конструктор родителя. Super - calls to parent
-        this.attackScore = attackScore;
-        this.health = health;
+        super(name, speed); // вызов конструктора родителя
+        if (health > 0) {
+            this.health = health;
+        }
+        else {
+            this.health = 1;
+        }
+        // придумать правила проверки значений здоровья и атаки, чтобы не было отрицательных значений.
+        if (attackScore > 0) {
+            this.attackScore = attackScore; // реализовать метод атаки.
+        }
+        else {
+            this.attackScore = 1;
+        }
     }
 
     @Override

@@ -1,9 +1,6 @@
 package com.domain.lesson6;
 
-import com.domain.lesson6.units.BattleUnit; //import class
-import com.domain.lesson6.units.Doctor;
-import com.domain.lesson6.units.Knight;
-import com.domain.lesson6.units.Warrior;
+import com.domain.lesson6.units.*;
 
 import java.util.Scanner;
 
@@ -26,5 +23,7 @@ public class Main {
         System.out.println("Ваш выбор " + battleUnit);
         //warrior knight doctor*/
         System.out.println(BattleUnit.returnUnit("Knight"));
+        King k = new King();
+        System.out.println(k.returnKing("Artur", 12, 14));
     }
 }

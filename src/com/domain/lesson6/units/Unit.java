@@ -11,7 +11,11 @@ abstract public class Unit implements RestAble {
         if(speed > 0){
         this.speed = speed;}
         else {
+            this.speed =1;
         }
+    }
+
+    public Unit () {
     }
 
     public String getName() {
@@ -38,6 +42,9 @@ abstract public class Unit implements RestAble {
     public void setSpeed(int speed) {
         if (this.speed>0){
         this.speed = speed;}
+        else {
+            this.speed=1;
+        }
     }
 
     private boolean isAlive() {
