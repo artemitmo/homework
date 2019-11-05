@@ -5,6 +5,7 @@ public class Warrior extends BattleUnit {
         super(name, speed, health, attackScore);
     }
 
+
     @Override
     public String toString() {
         return "Warrior{" +

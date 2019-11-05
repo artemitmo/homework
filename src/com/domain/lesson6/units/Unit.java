@@ -5,7 +5,8 @@ abstract public class Unit implements RestAble {
     protected int health;  //когда не указано, то доступность внутри пакета
     protected int speed;
 
-    public Unit(String name, int speed) {
+
+    public Unit( String name, int speed) {
         this.name = name;
         if(speed > 0){
         this.speed = speed;}

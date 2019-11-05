@@ -3,6 +3,7 @@ package com.domain.lesson6.units;
 abstract public class BattleUnit extends Unit implements AttackAble{
     protected int attackScore;
 
+
     public int getAttackScore() {
         return attackScore;
     }
@@ -22,22 +23,24 @@ abstract public class BattleUnit extends Unit implements AttackAble{
         System.out.println("BattleUnit покидает бой");
     }
 
+
     public static BattleUnit returnUnit (String yourChoice){
         if (yourChoice.equals("Warrior")){
-            Warrior war1 = new Warrior("Warrior" + (int)Math.random()*10, (int)Math.random()*10, (int)Math.random()*100, (int)Math.random()*5);
+            Warrior war1 = new Warrior("Warrior" + (int)(Math.random()*10), (int)(Math.random()*10), (int)(Math.random()*100), (int)(Math.random()*5));
             return war1;
         }
         else if (yourChoice.equals("Doctor")){
-            Doctor doc1 = new Doctor("Doc" + (int)Math.random()*10, (int)Math.random()*5, (int)Math.random()*100, (int)Math.random()*40);
+            Doctor doc1 = new Doctor("Doc" + (int)(Math.random()*10), (int)(Math.random()*5), (int)(Math.random()*100), (int)(Math.random()*40));
             return doc1;
         }
         else if (yourChoice.equals("Knight")){
-            Knight knight1 = new Knight("Knight"+ (int)Math.random()*10, (int)Math.random()*5,(int)Math.random()*100, (int)Math.random()*40);
+            Knight knight1 = new Knight("Knight"+ (int)(Math.random()*10), (int)(Math.random()*5),(int)(Math.random()*100), (int)(Math.random()*40));
             return knight1;
             }
+        else {
+            return null;
         }
-
-
+        }
     }
     //Base-class Unit. BattleUnit extends Unit
     //Наследование, инкапсуляция, полиморфизм, абстракция
@@ -47,4 +50,4 @@ abstract public class BattleUnit extends Unit implements AttackAble{
     //Полиморфизм - работа через общий тип данных, создаем объект...полиморфизм наследования (полиморфного юнита создали)
     //Реализован в перегрузке методов. Когда метод имеет одинаковое название, возвращаемое значение, но разные аргументы.
 
-}
+

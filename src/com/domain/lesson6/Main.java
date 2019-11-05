@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
         System.out.println("Укажите тип персонажа");
         String userChoice = scanner.nextLine();
         BattleUnit battleUnit = null;
@@ -24,6 +24,7 @@ public class Main {
         }
         battleUnit.run();
         System.out.println("Ваш выбор " + battleUnit);
-        //warrior knight doctor
+        //warrior knight doctor*/
+        System.out.println(BattleUnit.returnUnit("Knight"));
     }
 }

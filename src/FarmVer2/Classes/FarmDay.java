@@ -27,14 +27,19 @@ public class FarmDay {
                 farmWildArr.remove(b); //удаление зверя из листа
                 System.out.println("Зверь прогоняется 3й раз и больше не показывается на ферме");
             }
+            else {}
         } else {
             w1.attack(farmDomArr.get(indexDomAnimal));
         }
+
         if (farmDomArr.get(indexDomAnimal) == null) {
             farmDomArr.remove(indexDomAnimal); // удаление домашнего животного из листа
             System.out.println("Домашнее животное убито");
         }
+        else { }
+
         System.out.println("Кормление животных, +1 к health всем оставшимся");
+
         for (int i = 0; i < farmDomArr.size(); i++) {
             farmDomArr.get(i).setHealth(farmDomArr.get(i).getHealth() + 1);
         }
@@ -52,21 +57,15 @@ public class FarmDay {
             else if (farmDomArr.size() == 0) {
                 System.out.println("Game over");
             }
+                else {}
         }
 
         System.out.println();
         while (farmWildArr.size()>0 && farmDomArr.size()>0 && f.resourceFarm>0 ){
             countDays++;
             System.out.println("Прошел день " + countDays);
-             oneDay(); //recursion
+            oneDay(); //recursion
             break;
-        }
-        if (farmWildArr.size()==0){
-            System.out.println("Фермер прогнал всех диких зверей!");
-
-        }
-        else if (f.resourceFarm <=0){
-            System.out.println("Фермер разорен");
         }
     }
 }
