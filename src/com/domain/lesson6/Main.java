@@ -23,7 +23,8 @@ public class Main {
         System.out.println("Ваш выбор " + battleUnit);
         //warrior knight doctor*/
         System.out.println(BattleUnit.returnUnit("Knight"));
-        King k = new King();
-        System.out.println(k.returnKing("Artur", 12, 14));
+        //King k = new King(); if non-static
+        //System.out.println(k.returnKing("Artur", 12, 14));
+        System.out.println(King.returnKing("Artur", 12, 14));
     }
 }

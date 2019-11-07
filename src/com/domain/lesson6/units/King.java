@@ -11,10 +11,10 @@ public class King extends Unit {
         }
     }
 
-    public King returnKing (String name, int speed, int health){
-        this.name = name;
-        this.speed = speed;
-        this.health = health;
+    public static King returnKing (String name, int speed, int health){
+        name = name;
+        speed = speed;
+        health = health;
         King lion = new King(name, speed, health);
         return lion;
     }
