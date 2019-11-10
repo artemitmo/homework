@@ -49,7 +49,7 @@ public class DomAnimal extends Animals {
         DomAnimal cow3 = new DomAnimal("Cow3", 110, 5, 60, 5);
         DomAnimal cat1 = new DomAnimal("Cat1", 15, 30, 20, 0);
         DomAnimal rabbit = new DomAnimal("Rabbit",5 , 20, 20, 0);
-        DomAnimal rabbit1 = new DomAnimal("Rabbit1", 2, 20, 20, 0);
+        DomAnimal rabbit1 = new DomAnimal("Rabbit1", 2, 20 , 20, 0);
         DomAnimal chicken = new DomAnimal("Chicken", 5, 10, 30, 2);
         DomAnimal chicken2 = new DomAnimal("Chicken2", 5, 14, 30, 2);
         domAnimalArrayList.addAll(Arrays.asList(cow1, cow2, cow3, cat1, rabbit, rabbit1, chicken, chicken2));
