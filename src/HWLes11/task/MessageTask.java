@@ -42,13 +42,11 @@ class MessageTask {
         //  Ответ в консоль
         ArrayList <Integer> codeArrList = new ArrayList<>(messageList.size());
         HashSet<String> codeHashSet = new HashSet<>();
-
-        //создаём новый arrayList, который будет содержать только коды сообщений
+        
         for (int i = 0; i <messageList.size(); i++) {
             codeArrList.add(messageList.get(i).getCode());
         }
 
-        //Создаём строку из метода коллекций frequency и записывает эту строку в хэшСет (хэшсет нужен, чтобы избежать дубликатов)
         for (int i = 0; i < codeArrList.size(); i++) {
             String str = "Сообщений с кодом " + codeArrList.get(i) +" найдено " + Collections.frequency(codeArrList, codeArrList.get(i)) + " раз.\n";
             codeHashSet.add(str);
