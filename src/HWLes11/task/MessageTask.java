@@ -42,7 +42,7 @@ class MessageTask {
         //  Ответ в консоль
         ArrayList <Integer> codeArrList = new ArrayList<>(messageList.size());
         HashSet<String> codeHashSet = new HashSet<>();
-        
+
         for (int i = 0; i <messageList.size(); i++) {
             codeArrList.add(messageList.get(i).getCode());
         }
