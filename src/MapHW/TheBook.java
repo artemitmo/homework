@@ -46,7 +46,7 @@ public class TheBook {
         lettersFrequency(arrayList);
     }
 
-    public static void lettersFrequency ( List<String> list ) {
+    public static void lettersFrequency (List<String> list ) {
         /*
         Вывести частоту встречаемости букв анг алфавита по этой книге.
         Вывести в процентах для каждой буквы.
