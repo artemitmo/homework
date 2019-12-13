@@ -60,11 +60,6 @@ public class Except1 {
                             System.out.println("Результат: " + number3);
                             break;
 
-                        case "x", "х"://тут икс английский и Х русский
-                            number3 = number1 * number2;
-                            System.out.println("Результат: " + number3);
-                            break;
-
                         case "/":
                             try {
                                 number3 = number1 / number2;
